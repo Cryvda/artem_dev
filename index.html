@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <title>Артём — инфраструктура и автоматизация</title>
   <style>
-    #main_photo{
+    #main_photo {
       width: 200px;
       border-radius: 15%;
       display: block;
       margin: 0 auto;
     }
-    .gallery{
+    .gallery {
       list-style: none;
       padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+      text-align: center;
     }
-    .gallery img{
+    .gallery li {
+      display: inline-block;
+      margin: 5px;
+      vertical-align: top;
       width: 200px;
-      height: 150px;
-      object-fit: cover;
+    }
+    .gallery img {
+      width: 200px;
       border-radius: 5%;
       display: block;
-      margin: 0;
+      margin: 0 auto;
     }
   </style>
 </head>
