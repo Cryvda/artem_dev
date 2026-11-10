@@ -10,10 +10,21 @@
       display: block;
       margin: 0 auto;
     }
-    img{
+    .gallery{
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .gallery img{
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
       border-radius: 5%;
-      display: inline-block;
-      margin: 5px auto;
+      display: block;
+      margin: 0;
     }
   </style>
 </head>
@@ -26,13 +37,13 @@
     <li>приложения — Prometheus, Grafana, Docker, Zabbix, ELK, Loki;</li>
     <li>настройка и мониторинг сети на базе устройств: MikroTik, TP-Link.</li>
   </ul>
-  <ul>
-    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/grafana-512441-4f152e.png"></li>
-    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/node_load-512441-4df644.png"></li>
-    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/prometheus-512441-9744d0.png"></li>
-    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/web_int_docker.png"></li>
-    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/zabbix_in_docker.png"></li>
-    <li><img src="loki.png"></li>
+  <ul class="gallery">
+    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/grafana-512441-4f152e.png" alt="Grafana"></li>
+    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/node_load-512441-4df644.png" alt="Node load"></li>
+    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/prometheus-512441-9744d0.png" alt="Prometheus"></li>
+    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/web_int_docker.png" alt="Web in Docker"></li>
+    <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/zabbix_in_docker.png" alt="Zabbix in Docker"></li>
+    <li><img src="loki.png" alt="Loki"></li>
   </ul>
 </body>
 </html>
