@@ -4,40 +4,63 @@
   <meta charset="UTF-8">
   <title>Артём — инфраструктура и автоматизация</title>
   <style>
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+
     #main_photo {
-      width: 200px;
+      width: 250px;
       border-radius: 15%;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 20px auto;
     }
+
     .gallery {
       list-style: none;
       padding: 0;
       text-align: center;
     }
+
     .gallery li {
       display: inline-block;
-      margin: 5px;
+      margin: 10px 5px;
       vertical-align: top;
-      width: 200px;
+      width: 300px; /* Увеличил ширину плитки */
     }
+
     .gallery img {
-      width: 200px;
+      width: 100%; /* Картинка займёт всю ширину li (300px) */
+      height: auto; /* Сохранит пропорции */
       border-radius: 5%;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Лёгкая тень для объёма */
       display: block;
-      margin: 0 auto;
     }
   </style>
 </head>
 <body>
   <h1>Привет! Меня зовут Артём</h1>
+  
   <img src="photo.jpg" alt="Фото Артёма" id="main_photo">
+  
   <p>Здесь я собираю то, что пробую и настраиваю в своей домашней лаборатории: от простых Docker-контейнеров до кластеров K3s и распределённого мониторинга.</p>
+  
   <p>Мои проекты включают следующий стек:</p>
   <ul>
     <li>приложения — Prometheus, Grafana, Docker, Zabbix, ELK, Loki;</li>
     <li>настройка и мониторинг сети на базе устройств: MikroTik, TP-Link.</li>
   </ul>
+  
   <ul class="gallery">
     <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/grafana-512441-4f152e.png" alt="Grafana"></li>
     <li><img src="https://raw.githubusercontent.com/Cryvda/Docker/main/node_load-512441-4df644.png" alt="Node load"></li>
